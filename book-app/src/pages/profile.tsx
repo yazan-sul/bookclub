@@ -19,7 +19,7 @@ export default function ProfilePage({ user }: ProfileProps) {
   if (!user) return <p>Profile not available</p>;
 
   const fullName =
-    user.first_name || user.last_name
+    user.first_name || user.last_name 
       ? `${user.first_name ?? ""} ${user.last_name ?? ""}`.trim()
       : "No Name";
 
